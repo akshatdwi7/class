@@ -1,8 +1,6 @@
 // 2. Use getRandomCard() to set the values of firstCard and secondCard
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
 let cards = []
-let sum = firstCard + secondCard
+let sum = 0
 let hasBlackJack = false
 let isAlive = true
 let message = ""
@@ -28,8 +26,13 @@ function getRandomCard() {
 
 function startGame() {
     isAlive = true
-let rn =Math.floor( Math.random())
-    renderGame()
+    let firstCard =getRandomCard()
+    let secondCard =getRandomCard()
+    cards=[firstCard, secondCard]
+      sum = firstCard + secondCard;
+           renderGame()
+ // Generate two random numbes
+    // Re-assign the cards and sum variables so that the game can start
 }
 
 function renderGame() {
