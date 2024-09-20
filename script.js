@@ -66,9 +66,12 @@ function newCard() {
     }
 }
 
+let player ={
+   name : "Akshat" ,
+    chips : 678 
+} //objects in the javascript 
 
 
-let playerName = "Akshat"
-let playerChips = 150 
+
 let playerEl =document.getElementById("player-el")
-playerEl.textContent = playerName + playerChips + "$"
+playerEl.textContent = player.name  + " :  " +  "$"+ player.chips
