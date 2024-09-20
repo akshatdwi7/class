@@ -57,9 +57,18 @@ function renderGame() {
 
 function newCard() {
     // 3. Use the getRandomCard() to set the value of card
+    if(isAlive === true  && hasBlackJack === false ){
     let card = getRandomCard()
     sum += card
     cards.push(card)
     console.log(cards)
     renderGame()
+    }
 }
+
+
+
+let playerName = "Akshat"
+let playerChips = 150 
+let playerEl =document.getElementById("player-el")
+playerEl.textContent = playerName + playerChips + "$"
