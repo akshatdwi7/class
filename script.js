@@ -4,7 +4,7 @@ let sum = 0
 let hasBlackJack = false
 let isAlive = true
 let message = ""
-let messageEl = document.getElementById("message-el")
+let messageEl =document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
@@ -69,9 +69,12 @@ function newCard() {
 
 let player ={
    name : "Akshat" ,
-    chips : 678 
+    chips : 678 ,
+    sayHello: function(){
+        console.log("howddy?")
+    }
 } //objects in the javascript 
-
+player.sayHello()
 
 
 let playerEl =document.getElementById("player-el")
