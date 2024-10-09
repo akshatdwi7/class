@@ -9,6 +9,6 @@ fightButton.addEventListener("click", function() {
     // emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
     let randomFight = Math.floor(Math.random() *fighters.length) 
     console.log (fighters[randomFight])
-    
+
 
 })
