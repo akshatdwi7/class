@@ -23,3 +23,5 @@ function App() {
 }
 
 export default App;
+
+// This is the content for the js 
