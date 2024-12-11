@@ -1,8 +1,4 @@
-const { JSDOM } = require("jsdom");
 
-// Create a virtual DOM with apple-shelf and orange-shelf elements
-const dom = new JSDOM(`<!DOCTYPE html><div id="apple-shelf"></div><div id="orange-shelf"></div>`);
-const document = dom.window.document;
 
 let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"];
 let appleShelf = document.getElementById("apple-shelf");
